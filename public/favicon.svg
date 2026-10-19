@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="ppGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A066FF"/>
+      <stop offset="50%" stop-color="#7B2FFF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0D1A"/>
+      <stop offset="100%" stop-color="#07070D"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle glowing border -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#ppGlow)" stroke-width="2" stroke-opacity="0.6"/>
+  
+  <!-- Pulse lightning bolt / wave inside P -->
+  <path d="M22 16H36C43.732 16 48 20.268 48 27C48 33.732 43.732 38 36 38H29V48H22V16Z" fill="#F4F4FF"/>
+  <path d="M29 22H35C38.866 22 41 24.134 41 27C41 29.866 38.866 32 35 32H29V22Z" fill="#07070D"/>
+  
+  <!-- Electric Pulse Accent -->
+  <path d="M12 36L18 36L22 28L26 44L30 36L36 36" stroke="#00D4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

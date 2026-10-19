@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, ShieldCheck, Zap, Monitor, Smartphone, Tablet, Flame } from 'lucide-react';
 import { playPop } from '../utils/audio';
+import heroImg from '../assets/images/purepulse_hero_interface_1792443306449.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -153,13 +154,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreRoster }) =>
                   }`}
                 >
                   <img
-                    src="/src/assets/images/purepulse_hero_interface_1792443306449.jpg"
+                    src={heroImg}
                     alt="PurePulse Studio Interface"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      // Fallback matching Section 3.E
-                      e.currentTarget.style.display = 'none';
+                      // Fallback to static public path if needed
+                      if (!e.currentTarget.src.includes('/assets/images/')) {
+                        e.currentTarget.src = '/assets/images/purepulse_hero_interface_1792443306449.jpg';
+                      }
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07070D] via-black/40 to-transparent flex flex-col justify-end p-4">

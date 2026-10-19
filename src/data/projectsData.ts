@@ -1,3 +1,8 @@
+import heroImg from '../assets/images/purepulse_hero_interface_1792443306449.jpg';
+import p3Img from '../assets/images/project_p3lending_mockup_1792443306972.jpg';
+import fuelshieldImg from '../assets/images/project_fuelshield_mockup_1792443307400.jpg';
+import velourImg from '../assets/images/project_velour_mockup_1792443308110.jpg';
+
 export interface Project {
   id: string;
   name: string;
@@ -28,7 +33,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '9 days',
     performanceScore: 100,
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    image: '/src/assets/images/project_p3lending_mockup_1792443306972.jpg',
+    image: p3Img,
     clientStory: 'P3 Lending needed a modern, trustworthy interface to compete with Tier-1 fintechs without spending $40,000 on legacy agency retainers.',
     accentColor: '#A066FF',
   },
@@ -44,7 +49,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '6 days',
     performanceScore: 99,
     techStack: ['React', 'Motion', 'Web Audio API', 'Edge Cache'],
-    image: '/src/assets/images/project_velour_mockup_1792443308110.jpg',
+    image: velourImg,
     clientStory: 'Velour wanted a site that hit like a late-night Berlin club: dark, electric, instant, and frictionless on mobile for festival attendees.',
     accentColor: '#FF3366',
   },
@@ -60,7 +65,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '11 days',
     performanceScore: 100,
     techStack: ['TypeScript', 'Tailwind', 'Real-time WebSocket', 'Express'],
-    image: '/src/assets/images/project_fuelshield_mockup_1792443307400.jpg',
+    image: fuelshieldImg,
     clientStory: 'Fleet operators needed an industrial telemetry app that performed smoothly in remote areas with 3G cellular signals.',
     accentColor: '#00D4FF',
   },
@@ -76,7 +81,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '7 days',
     performanceScore: 100,
     techStack: ['React', 'PWA Offline Sync', 'Tailwind', 'Motion'],
-    image: '/src/assets/images/purepulse_hero_interface_1792443306449.jpg',
+    image: heroImg,
     clientStory: 'Crafted with zero bloated libraries to ensure instant local offline storage and zero load hesitation for morning daily check-ins.',
     accentColor: '#10B981',
   },
@@ -92,7 +97,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '8 days',
     performanceScore: 100,
     techStack: ['Node.js', 'TypeScript', 'Tailwind', 'Vite'],
-    image: '/src/assets/images/project_fuelshield_mockup_1792443307400.jpg',
+    image: fuelshieldImg,
     clientStory: 'Field teams needed an ultra-clean mobile-first dispatch console that works seamlessly in sunlight and gloves.',
     accentColor: '#7B2FFF',
   },
@@ -108,7 +113,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '4 days',
     performanceScore: 100,
     techStack: ['React 19', 'Motion', 'Vite', 'Tailwind v4'],
-    image: '/src/assets/images/purepulse_hero_interface_1792443306449.jpg',
+    image: heroImg,
     clientStory: 'The studio founder digital flagship — pure typography, kinetic scroll, and immediate code demonstration.',
     accentColor: '#A066FF',
   },
@@ -124,7 +129,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '8 days',
     performanceScore: 99,
     techStack: ['Next-Gen SPA', 'Tailwind CSS', 'Schema.org SEO'],
-    image: '/src/assets/images/project_p3lending_mockup_1792443306972.jpg',
+    image: p3Img,
     clientStory: 'Truck drivers broke down on highways needed a 1-tap call-out flow with zero layout shift and instant GPS coordinates.',
     accentColor: '#F59E0B',
   },
@@ -140,7 +145,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '12 days',
     performanceScore: 98,
     techStack: ['WebGL / Canvas', 'TypeScript', 'Vite', 'Tailwind'],
-    image: '/src/assets/images/project_fuelshield_mockup_1792443307400.jpg',
+    image: fuelshieldImg,
     clientStory: 'Visualizing thousands of acoustic bathymetry coordinates without lagging browser threads.',
     accentColor: '#00D4FF',
   },
@@ -156,7 +161,7 @@ export const PROJECTS_DATA: Project[] = [
     turnaroundTime: '5 days',
     performanceScore: 100,
     techStack: ['HTML5', 'Fast Search Index', 'Accessible WCAG AAA'],
-    image: '/src/assets/images/purepulse_hero_interface_1792443306449.jpg',
+    image: heroImg,
     clientStory: 'Built with accessibility and anonymity at the forefront, requiring sub-100kb payload for instant load on older smartphones.',
     accentColor: '#10B981',
   },
