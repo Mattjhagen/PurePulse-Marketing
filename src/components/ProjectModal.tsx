@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, ExternalLink, Gauge, Clock, Sparkles, CheckCircle2 } from 'lucide-react';
+import { X, ExternalLink, Gauge, Clock, Sparkles, CheckCircle2, Github } from 'lucide-react';
 import { Project } from '../data/projectsData';
 import { playPop } from '../utils/audio';
 
@@ -76,15 +76,27 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               <div className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
               <span className="ml-3 font-mono text-neutral-300">https://{project.domain}</span>
             </div>
-            <a
-              href={`https://${project.domain}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-[#00D4FF] hover:underline"
-            >
-              <span>Visit live</span>
-              <ExternalLink className="h-3 w-3" />
-            </a>
+            <div className="flex items-center gap-4">
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-neutral-400 hover:text-white transition-colors"
+                title="View GitHub repository"
+              >
+                <Github className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">Repo</span>
+              </a>
+              <a
+                href={`https://${project.domain}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-[#00D4FF] hover:underline"
+              >
+                <span>Visit live</span>
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            </div>
           </div>
 
           <div className="relative aspect-video w-full overflow-hidden bg-[#07070D]">
@@ -178,15 +190,27 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
         {/* Modal Actions */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
-          <a
-            href={`https://${project.domain}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-neutral-300 hover:text-white transition-colors"
-          >
-            <ExternalLink className="h-4 w-4" />
-            <span>Open live website in new tab</span>
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={`https://${project.domain}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs sm:text-sm text-neutral-300 hover:text-white transition-colors"
+            >
+              <ExternalLink className="h-4 w-4" />
+              <span>Visit Live Domain</span>
+            </a>
+            <span className="text-white/20">·</span>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs sm:text-sm text-neutral-400 hover:text-white transition-colors"
+            >
+              <Github className="h-4 w-4" />
+              <span>Source Repository</span>
+            </a>
+          </div>
 
           <button
             onClick={() => {

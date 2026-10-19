@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, ExternalLink, ArrowRight, Sparkles } from 'lucide-react';
+import { Search, ExternalLink, ArrowRight, Sparkles, Github } from 'lucide-react';
 import { Project, PROJECTS_DATA, CATEGORIES } from '../data/projectsData';
 import { playPop } from '../utils/audio';
 
@@ -204,16 +204,28 @@ export const RosterSection: React.FC<RosterSectionProps> = ({
 
                 {/* Card Actions Footer */}
                 <div className="px-6 py-3.5 border-t border-white/5 bg-white/[0.01] flex items-center justify-between text-xs">
-                  <button
-                    onClick={() => {
-                      playPop(540);
-                      onSelectProject(project);
-                    }}
-                    className="flex items-center gap-1 text-neutral-300 hover:text-white transition-colors"
-                  >
-                    <span>View Project</span>
-                    <ArrowRight className="h-3 w-3" />
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => {
+                        playPop(540);
+                        onSelectProject(project);
+                      }}
+                      className="flex items-center gap-1 text-neutral-300 hover:text-white transition-colors"
+                    >
+                      <span>Inspect</span>
+                      <ArrowRight className="h-3 w-3" />
+                    </button>
+                    <span className="text-white/20">·</span>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-400 hover:text-white transition-colors"
+                      title="View GitHub repository"
+                    >
+                      <Github className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
 
                   <button
                     onClick={() => {

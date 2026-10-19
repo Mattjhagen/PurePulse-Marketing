@@ -18,6 +18,24 @@ PurePulse is an independent web design and development studio crafted by **Matt 
 
 ---
 
+## 🌟 Featured Projects Roster
+
+All 9 showcase projects are real, open-source repositories built by Matt Hagen:
+
+| Project | Live Domain | GitHub Repository | Category |
+| :--- | :--- | :--- | :--- |
+| **P3 Lending Protocol** | `p3lending.space` | [Mattjhagen/P3-Lending-Protocol](https://github.com/Mattjhagen/P3-Lending-Protocol) | Decentralized P2P Lending & Social Underwriting |
+| **Velour Live** | `velour.live` | [Mattjhagen/Velour-live](https://github.com/Mattjhagen/Velour-live) | Privacy Operations & Data Exposure Intelligence |
+| **FuelShield** | `fuelshield.xyz` | [Mattjhagen/FuelShield](https://github.com/Mattjhagen/FuelShield) | Gas Price Protection Subscription & Fuel Card |
+| **Rooted Daily** | `rootedapp.space` | [Mattjhagen/Rooted_Daily](https://github.com/Mattjhagen/Rooted_Daily) | Offline 66-Book KJV Bible & AI Devotional |
+| **RelayAppPro** | `relayapp.pro` | [Mattjhagen/RelayAppPro](https://github.com/Mattjhagen/RelayAppPro) | OpenCode Mobile AI Workspace Client |
+| **Matty's SDR & Radio Blog** | `mattjhagen.xyz` | [Mattjhagen/Mattys-SDR-Blog](https://github.com/Mattjhagen/Mattys-SDR-Blog) | 73 On The Air Ham Radio & Live RTL-SDR Waterfall |
+| **PacMac Wireless OS** | `pacmacmobile.com` | [Mattjhagen/PacMacNTAP](https://github.com/Mattjhagen/PacMacNTAP) | White-Label MVNO Platform & eSIM Lifecycle |
+| **FlowOS (Project Aquarius)** | `projectaquarius.space` | [Mattjhagen/ProjectAquarius](https://github.com/Mattjhagen/ProjectAquarius) | Next-Gen Mobile OS Partial App Streaming |
+| **Northstar Recovery** | `cmameet.site` | [Mattjhagen/NorthStarRecovery](https://github.com/Mattjhagen/NorthStarRecovery) | Confidential CMA Mutual Support Companion |
+
+---
+
 ## 🖥️ Deploying on Ubuntu Server
 
 Here are step-by-step instructions to deploy PurePulse on an Ubuntu Server (20.04, 22.04, or 24.04 LTS).
